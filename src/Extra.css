@@ -4,16 +4,21 @@
     box-sizing: border-box;
 }
 
+
+
 body{
+color: white;
 font-family: 'Montserrat', sans-serif;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 font-family: 'Inter', sans-serif;
-background-image:url(./imgs/bg-mobile-dark.jpg);
+background: url(/src/imgs/bg-mobile-dark.jpg) ;
+
 }
 
 .container {
-    width: 360px;
+    width: 100%;
+    max-width: 588px;
     height: 712px;
 }
 
@@ -25,3 +30,10 @@ background-image:url(./imgs/bg-mobile-dark.jpg);
     -webkit-backdrop-filter: blur(4px);
 }
 
+@media (min-width: 700px) { 
+    body{
+        background: url(/src/imgs/bg-desktop.jpg) ;
+    }
+    }
+
+ 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="light">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +9,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home Portfólio</title>
 </head>
-<body class="text-white bg-center-top bg-no-repeat bg-cover "> 
-    <div class="container pt-14 mx-auto  ">
-        <div class="p-6  " id="profile">
-            <img src="https://github.com/Lucasvicentedasilva.png" class="rounded-full border  mx-auto block w-28" alt="imagem do perfil github">
+<body class=" bg-center-top h-screen bg-no-repeat bg-cover"> 
+    <div class="container pt-14 mx-auto ">
+        <div class="p-6" data-aos="fade-up" id="profile">
+            <img src="https://github.com/Lucasvicentedasilva.png" class="rounded-full border mx-auto block w-28" alt="imagem do perfil github">
             <p class="text-center mt-2 font-medium">@lucasSilva</p>
         </div>
         <ul class="">
            
             <a href="https://www.linkedin.com/in/lucasvicentedasilva/" target="_blank" class="">
-                <li class="listbtn hover:border-white animate-pulse rounded-md px-1 py-2 m-4 text-center">
+                <li class="listbtn hover:border-white  animate-pulse rounded-md px-1 py-2 m-4 text-center" data-aos="fade-right">
                     Acesse meu linkedin
                 </li> 
             </a>
 
             <a href="https://github.com/Lucasvicentedasilva" target="_blank" target="_blank" class="">
-                <li class="listbtn hover:border-white animate-pulse rounded-md px-1 py-2 m-4 text-center">
+                <li class="listbtn hover:border-white animate-pulse rounded-md px-1 py-2 m-4 text-center" data-aos="fade-left">
                     Acesse meu github
                 </li> 
             </a>
 
             <a href="https://lucas-s-dev.vercel.app/" target="_blank" class="">
-                <li class="listbtn hover:border-white animate-pulse rounded-md px-1 py-2 m-4 text-center">
+                <li class="listbtn hover:border-white animate-pulse rounded-md px-1 py-2 m-4 text-center" data-aos="zoom-out-up">
                     Veja meu portfólio
                 </li> 
             </a>
 
         </ul>
-        <div id="social-links" class="mt-16 flex gap-8 text-2xl justify-center items-center ">
-            <a href="https://www.linkedin.com/in/lucasvicentedasilva/" target="_blank" class="flex justify-center items-center">
+        <div id="social-links" class="mt-16 flex gap-8 text-2xl justify-center items-center " data-aos="zoom-out-up" >
+            <a href="https://www.linkedin.com/in/lucasvicentedasilva/" target="_blank" class="flex justify-center items-center" >
             <ion-icon name="logo-linkedin" class="hover:bg-gray-400 hover:p-3 hover:rounded-full"></ion-icon>
             </a>
             <a href="https://github.com/Lucasvicentedasilva" target="_blank" class="flex justify-center items-center">
@@ -49,10 +50,14 @@
             <ion-icon name="logo-instagram" class="hover:bg-gray-400 hover:p-3 hover:rounded-full"></ion-icon>
             </a>
         </div>
-        <footer class="py-8 mt-28 text-center">Feito com ♥ por <a href="https://lucas-s-dev.vercel.app/"></a> Lucas Silva</footer>
+        <footer class="py-8 mt-28 text-center" data-aos="zoom-in-up">Feito com ♥ por <a href="https://lucas-s-dev.vercel.app/"></a> Lucas Silva</footer>
     </div>
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
